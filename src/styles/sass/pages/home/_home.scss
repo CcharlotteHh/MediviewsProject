@@ -1,0 +1,21 @@
+.home{
+    width: 100%;
+    @include flexbox($alignItems:center,$direction:column);
+    @include md{
+        margin-top: 10%;
+    }
+ .bannerImg{
+    height: 30vh;
+    width: 90%;
+    
+    width: 90%;
+
+    img{
+        @include imgCover;
+    }
+ }
+
+ .blog{
+   
+ }
+}

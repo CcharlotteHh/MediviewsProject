@@ -4,7 +4,5 @@
 @import "base/_reset";
 @import "abstracts/_variables";
 @import "components/_nav";
-.app{
-    width: 100vw;
-    background-color: green;
-}
+@import "pages/home/_home";
+@import "pages/home/_blogCardContainer"

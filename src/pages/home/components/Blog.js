@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
+import BlogCard from './BlogCard';
 
-function Blog({img, desc, date}) {
+function Blog({title}) {
   return (
-    <div className='blogCard'>
-      <figure>
-        <img src={img} alt="blogImg"/>          
-      </figure>
-      <div className='blogText'>
-        <p>{desc}</p>
-        <p>{date}</p>
+
+    <div className='blog'>
+      <h1>{title}</h1>
+      <div className='blogCardContainer'>
+   <BlogCard></BlogCard>
+   <BlogCard></BlogCard>
+   <BlogCard></BlogCard>
+   <BlogCard isLargeRow/>
       </div>
     </div>
   )
