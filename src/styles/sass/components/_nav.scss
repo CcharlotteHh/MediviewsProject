@@ -1,0 +1,49 @@
+nav {
+    background-color: gray;
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+  @include flexbox($justifyContent: space-between, $alignItems: center);
+  list-style: none;
+  .logoContainer {
+    width: 30%;
+    @include flexbox($justifyContent: flex-start);
+    font-size: 3rem;
+    .logo {
+      font-size: 3rem;
+    }
+  }
+
+  ul {
+    font-size: 1.75rem;
+    width: 60%;
+    @include flexbox($justifyContent: flex-end);
+    list-style: none;
+
+   
+
+    li {
+      margin-right: 1%;
+      @include md{
+        display: none;
+    }
+    }
+  }
+  .hamburger-menu{
+    @include md{
+    position: absolute;
+    
+    top: 1.5rem;
+    right: 2rem;
+    display: none;
+    width: 40px;
+    height: 31px;
+    @include flexbox($justifyContent: space-between, $direction: column);
+    .line {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+      }
+  }
+}
+}

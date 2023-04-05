@@ -1,0 +1,10 @@
+@import "abstracts/_mixins";
+@import "abstracts/_variables";
+@import "abstracts/_breakpoints";
+@import "base/_reset";
+@import "abstracts/_variables";
+@import "components/_nav";
+.app{
+    width: 100vw;
+    background-color: green;
+}
